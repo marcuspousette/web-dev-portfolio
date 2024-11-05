@@ -34,9 +34,9 @@ export default function ReviewSection() {
           alt=""
           style={{
             position: "absolute",
-            left: "-150px",
-            width: "300px",
-            top: "00px",
+            left: "-241px",
+            width: "500px",
+            top: "0px",
           }}
         />
       </Hidden>
@@ -68,9 +68,9 @@ export default function ReviewSection() {
               marginBottom: "32px",
             }}
           >
-            Marcus's expertise in page speed optimization has greatly improved
+            "Marcus's expertise in page speed optimization has greatly improved
             our website's performance. Our conversions have increased by 20%
-            since working with him.
+            since working with him."
           </Typography>
           <Avatar
             alt="John Doe"
