@@ -5,13 +5,18 @@ import { Box, Stack, Button, Typography } from '@mui/material';
 export default function Hero() {
   return (
     <Stack
-      direction={'row'}
+      direction={{ sm: 'column', md: 'row' }}
       justifyContent={'center'}
       alignItems={'center'}
-      sx={{ height: 'calc(80vh - 64px)' }}
+      sx={{ height: { xs: 'calc(100vh - 56px)', md: 'calc(80vh - 64px)' } }}
+      spacing={{ xs: 4, md: 0 }}
     >
-      <Stack sx={{ width: '50%' }} spacing={2}>
-        <Typography variant="h2" component="h1">
+      <Stack sx={{ width: { sm: '100%', md: '50%' } }} spacing={2}>
+        <Typography
+          variant="h2"
+          component="h1"
+          sx={{ fontSize: { xs: '2.5rem', md: '3.75rem' } }}
+        >
           Boost Conversions with a Page Speed Pro
         </Typography>
         <Typography variant="body1">
@@ -26,7 +31,9 @@ export default function Hero() {
           </Button>
         </Stack>
       </Stack>
-      <img src={machero} alt="Marcus Pousette" width={'50%'} />
+      <Box sx={{ width: { sm: '100%', md: '50%' } }}>
+        <img src={machero} alt="Marcus Pousette" width={'100%'} />
+      </Box>
     </Stack>
   );
 }
